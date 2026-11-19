@@ -1,0 +1,6 @@
+{
+  "name": "LaundryCalc",
+  "description": "Katalog paket layanan laundry, kalkulator estimasi biaya dengan batas minimum 3 kg, dan generator pesan pesanan WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

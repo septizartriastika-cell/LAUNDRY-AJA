@@ -1,0 +1,14 @@
+/* Gaya global dan konfigurasi font lokal Plus Jakarta Sans untuk LaundryCalc. */
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #fafafa;
+    color: #171717;
+  }
+}
