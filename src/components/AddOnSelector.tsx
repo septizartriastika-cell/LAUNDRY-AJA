@@ -27,7 +27,7 @@ export function AddOnSelector({
     >
       <h2
         id="heading-addons"
-        className="text-lg font-semibold text-neutral-900 mb-4"
+        className="text-lg font-semibold text-blue-950 mb-4"
       >
         Layanan Tambahan
       </h2>
@@ -48,9 +48,9 @@ export function AddOnSelector({
             <label
               key={addOn.id}
               htmlFor={`addon-${addOn.id}`}
-              className={`flex items-start justify-between gap-4 rounded-xl border p-4 min-h-[44px] cursor-pointer transition-transform duration-150 ease-out active:scale-[0.99] motion-reduce:transition-none focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-700 ${
+              className={`flex items-start justify-between gap-4 rounded-xl border p-4 min-h-[44px] cursor-pointer transition-transform duration-150 ease-out active:scale-[0.99] motion-reduce:transition-none focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-blue-900 ${
                 isChecked
-                  ? 'border-blue-700 bg-blue-50'
+                  ? 'border-orange-700 bg-orange-50'
                   : 'border-neutral-200 bg-white hover:border-neutral-300'
               }`}
             >
@@ -78,7 +78,7 @@ export function AddOnSelector({
 
               <div className="flex items-center gap-3 shrink-0 pt-0.5">
                 {isChecked && isValidWeight && (
-                  <span className="text-sm font-semibold text-blue-700 tabular-nums whitespace-nowrap">
+                  <span className="text-sm font-semibold text-orange-700 tabular-nums whitespace-nowrap">
                     +{formatRupiah(computedCost)}
                   </span>
                 )}
@@ -86,7 +86,7 @@ export function AddOnSelector({
                   aria-hidden="true"
                   className={`w-5 h-5 rounded-md border flex items-center justify-center shrink-0 ${
                     isChecked
-                      ? 'border-blue-700 bg-blue-700 text-white'
+                      ? 'border-orange-700 bg-orange-700 text-white'
                       : 'border-neutral-300 bg-white'
                   }`}
                 >

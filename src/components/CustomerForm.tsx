@@ -36,7 +36,7 @@ export function CustomerForm({
     >
       <h2
         id="heading-customer"
-        className="text-lg font-semibold text-neutral-900 mb-4"
+        className="text-lg font-semibold text-blue-950 mb-4"
       >
         Data Pemesan
       </h2>
@@ -61,7 +61,7 @@ export function CustomerForm({
             aria-required="true"
             aria-invalid={Boolean(errors.customerName)}
             aria-describedby={errors.customerName ? 'name-error' : undefined}
-            className={`w-full min-h-[44px] rounded-xl border px-4 py-2 text-base text-neutral-900 placeholder:text-neutral-500 bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 ${
+            className={`w-full min-h-[44px] rounded-xl border px-4 py-2 text-base text-neutral-900 placeholder:text-neutral-500 bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 ${
               errors.customerName ? 'border-red-700' : 'border-neutral-200'
             }`}
           />
@@ -99,7 +99,7 @@ export function CustomerForm({
               aria-describedby={
                 errors.pickupAddress ? 'address-error address-helper' : 'address-helper'
               }
-              className={`w-full rounded-xl border px-4 py-3 text-base text-neutral-900 placeholder:text-neutral-500 bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 ${
+              className={`w-full rounded-xl border px-4 py-3 text-base text-neutral-900 placeholder:text-neutral-500 bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 ${
                 errors.pickupAddress ? 'border-red-700' : 'border-neutral-200'
               }`}
             />
@@ -134,7 +134,7 @@ export function CustomerForm({
             onChange={(event) => onSpecialNotesChange(event.target.value)}
             placeholder="Contoh: Pisahkan pakaian putih dan batik"
             aria-describedby="notes-helper"
-            className="w-full rounded-xl border border-neutral-200 px-4 py-3 text-base text-neutral-900 placeholder:text-neutral-500 bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
+            className="w-full rounded-xl border border-neutral-200 px-4 py-3 text-base text-neutral-900 placeholder:text-neutral-500 bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900"
           />
           <p id="notes-helper" className="text-sm text-neutral-600 mt-1">
             Opsional, misalnya instruksi pemisahan pakaian.

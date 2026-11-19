@@ -105,7 +105,7 @@ export function OrderSummary({
       >
         <h2
           id="heading-summary-desktop"
-          className="text-lg font-semibold text-neutral-900 mb-4"
+          className="text-lg font-semibold text-blue-950 mb-4"
         >
           Ringkasan Estimasi
         </h2>
@@ -118,10 +118,10 @@ export function OrderSummary({
         />
 
         <div className="border-t border-neutral-200 mt-4 pt-4 flex items-baseline justify-between gap-4">
-          <span className="text-base font-medium text-neutral-900">
+          <span className="text-base font-semibold text-blue-950">
             Total Estimasi
           </span>
-          <span className="text-3xl font-semibold text-neutral-900 tabular-nums">
+          <span className="text-3xl font-semibold text-blue-950 tabular-nums">
             {formatRupiah(estimate.totalEstimate)}
           </span>
         </div>
@@ -133,7 +133,7 @@ export function OrderSummary({
         <button
           type="submit"
           form="laundry-order-form"
-          className="mt-6 w-full min-h-[44px] rounded-xl bg-blue-700 hover:bg-blue-800 text-white font-medium text-base px-4 py-3 flex items-center justify-center gap-2 transition-transform duration-150 ease-out active:scale-[0.99] motion-reduce:transition-none whitespace-nowrap focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
+          className="mt-6 w-full min-h-[44px] rounded-xl bg-orange-700 hover:bg-orange-800 text-white font-medium text-base px-4 py-3 flex items-center justify-center gap-2 transition-transform duration-150 ease-out active:scale-[0.99] motion-reduce:transition-none whitespace-nowrap focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900"
         >
           <MessageCircle className="w-5 h-5 shrink-0" aria-hidden="true" />
           <span>Kirim Pesanan ke WhatsApp</span>
@@ -152,7 +152,7 @@ export function OrderSummary({
                   href={lastWhatsAppUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block mt-1 font-semibold underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
+                  className="inline-block mt-1 font-semibold underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900"
                 >
                   Buka WhatsApp
                 </a>
@@ -205,7 +205,7 @@ export function OrderSummary({
           <div className="flex items-center justify-between gap-2">
             <div className="flex items-baseline gap-2 min-w-0">
               <span className="text-sm text-neutral-600 shrink-0">Estimasi</span>
-              <span className="text-xl font-semibold text-neutral-900 tabular-nums truncate">
+              <span className="text-xl font-semibold text-blue-950 tabular-nums truncate">
                 {formatRupiah(estimate.totalEstimate)}
               </span>
             </div>
@@ -214,7 +214,7 @@ export function OrderSummary({
               type="button"
               onClick={onToggleMobileBreakdown}
               aria-expanded={isMobileBreakdownOpen}
-              className="min-h-[44px] px-3 rounded-xl text-sm font-medium text-blue-700 hover:bg-blue-50 flex items-center gap-1 shrink-0 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
+              className="min-h-[44px] px-3 rounded-xl text-sm font-medium text-blue-950 hover:bg-blue-50 flex items-center gap-1 shrink-0 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900"
             >
               <span>Rincian</span>
               {isMobileBreakdownOpen ? (
@@ -228,7 +228,7 @@ export function OrderSummary({
           <button
             type="submit"
             form="laundry-order-form"
-            className="w-full min-h-[44px] rounded-xl bg-blue-700 hover:bg-blue-800 text-white font-medium text-base px-4 py-2 flex items-center justify-center gap-2 transition-transform duration-150 ease-out active:scale-[0.99] motion-reduce:transition-none whitespace-nowrap focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
+            className="w-full min-h-[44px] rounded-xl bg-orange-700 hover:bg-orange-800 text-white font-medium text-base px-4 py-2 flex items-center justify-center gap-2 transition-transform duration-150 ease-out active:scale-[0.99] motion-reduce:transition-none whitespace-nowrap focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900"
           >
             <MessageCircle className="w-5 h-5 shrink-0" aria-hidden="true" />
             <span>Kirim Pesanan ke WhatsApp</span>

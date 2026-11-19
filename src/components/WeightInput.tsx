@@ -33,7 +33,7 @@ export function WeightInput({
     >
       <h2
         id="heading-weight"
-        className="text-lg font-semibold text-neutral-900 mb-4"
+        className="text-lg font-semibold text-blue-950 mb-4"
       >
         Estimasi Berat Cucian
       </h2>
@@ -51,7 +51,7 @@ export function WeightInput({
             type="button"
             onClick={() => onStepWeight(-WEIGHT_LIMITS.stepQuick)}
             aria-label="Kurangi berat 0,5 kg"
-            className="min-w-[44px] min-h-[44px] px-3 rounded-xl border border-neutral-200 bg-white text-neutral-900 hover:bg-neutral-50 active:scale-[0.98] transition-transform duration-150 ease-out motion-reduce:transition-none flex items-center justify-center focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
+            className="min-w-[44px] min-h-[44px] px-3 rounded-xl border border-neutral-200 bg-white text-blue-950 hover:bg-blue-50 active:scale-[0.98] transition-transform duration-150 ease-out motion-reduce:transition-none flex items-center justify-center focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900"
           >
             <Minus className="w-4 h-4" aria-hidden="true" />
           </button>
@@ -71,7 +71,7 @@ export function WeightInput({
               aria-describedby={
                 errorMessage ? 'weight-error weight-helper' : 'weight-helper'
               }
-              className={`w-full min-h-[44px] rounded-xl border px-4 py-2 pr-12 text-base text-neutral-900 tabular-nums placeholder:text-neutral-500 bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 ${
+              className={`w-full min-h-[44px] rounded-xl border px-4 py-2 pr-12 text-base text-neutral-900 tabular-nums placeholder:text-neutral-500 bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 ${
                 errorMessage ? 'border-red-700' : 'border-neutral-200'
               }`}
             />
@@ -84,7 +84,7 @@ export function WeightInput({
             type="button"
             onClick={() => onStepWeight(WEIGHT_LIMITS.stepQuick)}
             aria-label="Tambah berat 0,5 kg"
-            className="min-w-[44px] min-h-[44px] px-3 rounded-xl border border-neutral-200 bg-white text-neutral-900 hover:bg-neutral-50 active:scale-[0.98] transition-transform duration-150 ease-out motion-reduce:transition-none flex items-center justify-center focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
+            className="min-w-[44px] min-h-[44px] px-3 rounded-xl border border-neutral-200 bg-white text-blue-950 hover:bg-blue-50 active:scale-[0.98] transition-transform duration-150 ease-out motion-reduce:transition-none flex items-center justify-center focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900"
           >
             <Plus className="w-4 h-4" aria-hidden="true" />
           </button>

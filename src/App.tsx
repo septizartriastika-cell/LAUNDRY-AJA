@@ -184,12 +184,12 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-neutral-50 text-neutral-900">
-      <header className="bg-white border-b border-neutral-200">
+      <header className="bg-blue-950 text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 sm:py-6">
-          <h1 className="text-2xl font-semibold text-neutral-900 text-balance">
+          <h1 className="text-2xl font-semibold tracking-tight text-white text-balance">
             {STORE_CONFIG.storeName}
           </h1>
-          <p className="text-base text-neutral-600 mt-1">
+          <p className="text-base text-blue-100 mt-1">
             Katalog tarif dan kalkulator estimasi cucian.
           </p>
         </div>

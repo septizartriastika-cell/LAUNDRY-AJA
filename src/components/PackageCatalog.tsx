@@ -24,7 +24,7 @@ export function PackageCatalog({
     >
       <h2
         id="heading-packages"
-        className="text-lg font-semibold text-neutral-900 mb-4"
+        className="text-lg font-semibold text-blue-950 mb-4"
       >
         Pilih Paket Layanan
       </h2>
@@ -43,9 +43,9 @@ export function PackageCatalog({
               role="radio"
               aria-checked={isSelected}
               onClick={() => onSelectPackage(pkg.id)}
-              className={`w-full text-left rounded-xl border p-4 min-h-[44px] transition-transform duration-150 ease-out active:scale-[0.99] motion-reduce:transition-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 ${
+              className={`w-full text-left rounded-xl border p-4 min-h-[44px] transition-transform duration-150 ease-out active:scale-[0.99] motion-reduce:transition-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 ${
                 isSelected
-                  ? 'border-blue-700 bg-blue-50'
+                  ? 'border-orange-700 bg-orange-50'
                   : 'border-neutral-200 bg-white hover:border-neutral-300'
               }`}
             >
@@ -67,7 +67,7 @@ export function PackageCatalog({
                 <div className="flex items-center gap-3 shrink-0">
                   <span
                     className={`text-base font-semibold tabular-nums whitespace-nowrap ${
-                      isSelected ? 'text-blue-700' : 'text-neutral-900'
+                      isSelected ? 'text-orange-700' : 'text-blue-950'
                     }`}
                   >
                     {formatRupiah(pkg.pricePerKg)} / kg
@@ -76,7 +76,7 @@ export function PackageCatalog({
                     aria-hidden="true"
                     className={`w-5 h-5 rounded-full border flex items-center justify-center shrink-0 ${
                       isSelected
-                        ? 'border-blue-700 bg-blue-700 text-white'
+                        ? 'border-orange-700 bg-orange-700 text-white'
                         : 'border-neutral-300 bg-white'
                     }`}
                   >
