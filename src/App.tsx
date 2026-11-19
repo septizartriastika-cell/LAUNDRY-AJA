@@ -190,7 +190,7 @@ export default function App() {
             {STORE_CONFIG.storeName}
           </h1>
           <p className="text-base text-blue-100 mt-1">
-            Katalog tarif dan kalkulator estimasi cucian.
+            Laundry AJA, Ngapain Nyuci?
           </p>
         </div>
       </header>
