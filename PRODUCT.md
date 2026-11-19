@@ -16,7 +16,7 @@ Dokumen ini merangkum daftar fitur dari PRD *LaundryCalc & Catalog* (MVP v0.1), 
 
 ## Keputusan Klarifikasi & Resolusi PRD
 
-1. **Data toko contoh (Open Item PRD):** Memakai nama toko contoh *Laundry Bersih Sejahtera* dan nomor WhatsApp contoh `6281234567890` di `src/config.ts` agar siap diuji sebelum diganti nomor admin resmi toko.
+1. **Data toko (Open Item PRD):** Memakai nama toko *LAUNDRY AJA* dan nomor WhatsApp contoh `6281234567890` di `src/config.ts` agar siap diuji sebelum diganti nomor admin resmi toko.
 2. **Kondisi awal kalkulator:** Berat awal disetel `3` kg dan paket pertama (**Cuci Lipat**) otomatis terpilih saat halaman dibuka.
 3. **Rentang dan pembulatan angka berat:** Input berat menerima desimal dengan titik maupun koma dari `0,1` kg hingga `100` kg. Tombol cepat `+/-` mengubah berat per `0,5` kg, sementara pengetikan langsung mendukung ketelitian `0,1` kg. Hasil perkalian rupiah dibulatkan ke bilangan bulat terdekat (`Math.round`).
 4. **Cakupan tahap ini:** Spesifikasi dan implementasi dikerjakan sampai **FT-06**. Catatan penyangkalan estimasi tetap ditampilkan pada ringkasan biaya (**FT-04**) dan pesan WhatsApp (**FT-06**) sesuai aturan risiko PRD.

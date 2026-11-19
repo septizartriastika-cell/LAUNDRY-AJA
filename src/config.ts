@@ -26,7 +26,7 @@ export interface AddOnService {
 }
 
 export const STORE_CONFIG: StoreConfig = {
-  storeName: 'Laundry Bersih Sejahtera',
+  storeName: 'LAUNDRY AJA',
   whatsappNumber: '6281234567890',
   minimumChargeKg: 3.0,
 };
